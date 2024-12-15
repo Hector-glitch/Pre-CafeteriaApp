@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/primerPlat">
+
+    <fragment
+        android:id="@+id/primerPlat"
+        android:name="com.hector.pre_cafeteria.PrimerPlat"
+        android:label="PrimerPlat" >
+        <action
+            android:id="@+id/action_primerPlat_to_begudes"
+            app:destination="@id/begudes" />
+    </fragment>
+    <fragment
+        android:id="@+id/begudes"
+        android:name="com.hector.pre_cafeteria.Begudes"
+        android:label="Begudes" >
+        <action
+            android:id="@+id/action_begudes_to_preuTotal"
+            app:destination="@id/preuTotal" />
+    </fragment>
+    <fragment
+        android:id="@+id/preuTotal"
+        android:name="com.hector.pre_cafeteria.PreuTotal"
+        android:label="PreuTotal" />
+</navigation>
